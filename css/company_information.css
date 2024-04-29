@@ -1,0 +1,108 @@
+img.company-information-img {
+    max-width: 1200px;
+    height: 256px;
+    margin: 54px auto 0 auto;
+    object-fit: cover;
+}
+
+section.section-side .section-content ul {
+    display: flex;
+    gap: 32px;
+    flex-direction: column;
+}
+
+section.section-side .section-content ul li {
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    gap: 36px;
+}
+
+section.section-side .section-content ul li span {
+    font-size: 22px;
+    font-family: "Heiti SC", "Microsoft YaHei", sans-serif;
+    color: #043a79;
+}
+
+section.section-wrap.section-wrap-about h2 hr {
+    color: #ffffff;
+}
+
+section.section-wrap.section-wrap-about {
+    padding: 120px 0;
+    background: linear-gradient(320deg, #031950, #0a57a5);
+    color: #ffffff;
+}
+
+section.section-wrap.section-wrap-about table {
+    margin: 80px auto;
+    width: 686px;
+}
+
+section.section-wrap.section-wrap-about table,
+section.section-wrap.section-wrap-about tr {
+    border-collapse: collapse;
+    border: 1px solid #848484;
+}
+
+section.section-wrap.section-wrap-about th,
+section.section-wrap.section-wrap-about td {
+    padding: 10px;
+}
+
+section.section-wrap.section-wrap-about th {
+    vertical-align: top;
+    text-align: left;
+    font-weight: normal;
+    border-right: 1px solid #848484;
+}
+
+section.section-wrap.section-wrap-about td {
+    display: flex;
+    gap: 32px;
+}
+
+section.section-wrap.section-wrap-about iframe {
+    width: 686px;
+    height: 220px;
+}
+
+section.section-wrap ul.section-content-history {
+    margin: 80px auto;
+    width: 686px;
+    gap: 32px;
+    display: flex;
+    flex-direction: column;
+}
+
+section.section-wrap ul.section-content-history li {
+    display: flex;
+    align-items: flex-start;
+}
+
+section.section-wrap ul.section-content-history li div {
+    width: 20%;
+    font-size: 16px;
+    color: #043a79;
+    display: flex;
+    align-items: center;
+}
+
+section.section-wrap ul.section-content-history li div span {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background-color: #043a79;
+    margin-right: 20px;
+    position: relative;
+}
+
+section.section-wrap ul.section-content-history li div span::after {
+    position: absolute;
+    content: "";
+    width: 1px;
+    height: 58px;
+    top: 0;
+    left: 5px;
+    background-color: #043a79;
+}

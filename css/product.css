@@ -1,0 +1,57 @@
+section .section-content.section-content-product {
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+section .section-content.section-content-product div {
+    width: 48.2%;
+}
+
+section .section-content.section-content-product div.product-block {
+    width: 30.9%;
+}
+
+section .section-content.section-content-product div p {
+    padding: 8px 10px;
+    background-color: #f3f3f3;
+}
+
+section .section-content.section-content-product div img {
+    margin-top: 24px;
+    height: 298px;
+    object-fit: cover;
+}
+
+section .section-content.section-content-product div.product-block img {
+    height: 196px;
+    object-fit: cover;
+}
+
+section .section-content.section-content-product ul {
+    width: 100%;
+    display: flex;
+}
+
+section .section-content.section-content-product ul li {
+    width: 50%;
+    list-style: inside;
+}
+
+section .section-content dl div {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px 12px;
+}
+
+section .section-content dl div:nth-of-type(2n - 1) {
+    background-color: #f3f3f3;
+}
+
+section .section-content dl div dt {
+    width: 20%;
+}
+
+section .section-content dl div dd {
+    width: 80%;
+}

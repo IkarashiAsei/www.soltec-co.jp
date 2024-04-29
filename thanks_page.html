@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <!-- コンポーネント化したい（共通） -->
+    <!-- ヘッド -->
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="株式会社ソルテック | 製品案内" />
+        <meta name="keywords" content="株式会社ソルテック | 製品案内" />
+        <title>株式会社ソルテック | 製品案内</title>
+        <link rel="stylesheet" href="./css/reset.css" />
+        <link rel="stylesheet" href="./css/common.css" />
+    </head>
+    <body>
+        <!-- コンポーネント化したい（共通） -->
+        <!-- ヘッダー -->
+        <header>
+            <a href="/"
+                ><img src="./images/soltec_logo.png" alt="soltec_logo"
+            /></a>
+            <nav>
+                <a href="/about">ソルテックの強み</a>
+                <a href="/product">製品案内</a>
+                <a href="/equipment">設備案内</a>
+                <a href="/company_information">企業情報</a>
+                <a href="/news">お知らせ</a>
+                <a href="/contact" class="header-contact">お問い合わせ</a>
+            </nav>
+        </header>
+
+        <main>
+            <!-- コンポーネント化したい（共通） -->
+            <!-- コンテンツトップ -->
+            <div class="content-top contact">
+                <h1>CONTACT<span>お問い合わせ</span></h1>
+            </div>
+
+            <section class="section-noflex text-center">
+                <div class="page-top-area">
+                    <h3 class="page-heading">フォームで問い合わせる</h3>
+                    <p>
+                        お問い合わせありがとうございます。<br />
+                        内容を確認後、返信させていただきます。
+                    </p>
+                </div>
+                <button class="button-border">
+                    <a href="/top">TOPへ戻る</a>
+                </button>
+            </section>
+        </main>
+
+        <!-- コンポーネント化したい（共通） -->
+        <!-- フッター -->
+        <footer>
+            <div class="footer-navigation">
+                <img src="./images/soltec_logo.png" alt="soltec_logo" />
+                <nav>
+                    <div>
+                        <a href="/about">ソルテックの強み</a>
+                        <a href="/product">製品案内</a>
+                        <a href="/equipment">設備案内</a>
+                    </div>
+                    <div>
+                        <a href="/company_information">企業情報</a>
+                        <a href="/news">お知らせ</a>
+                        <a href="">採用</a>
+                    </div>
+                </nav>
+            </div>
+            <div class="footer-contact-info">
+                <p>
+                    〒992-1128 山形県米沢市八幡原2-4698-5<br />
+                    TEL：0238-28-3333<br />
+                    FAX：0238-28-1529
+                </p>
+                <a href="/contact" class="header-contact">お問い合わせ</a>
+            </div>
+        </footer>
+    </body>
+</html>

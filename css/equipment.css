@@ -1,0 +1,43 @@
+section.section-side ul {
+    margin-top: 56px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+section.section-side ul li {
+    list-style: inside;
+    font-size: 18px;
+    color: #043a79;
+}
+
+.section-content .content-block-equipment {
+    display: flex;
+    justify-content: space-between;
+    gap: 70px;
+    margin-top: 36px;
+}
+
+.section-content .content-block-equipment dl div {
+    display: flex;
+    justify-content: space-between;
+    width: 432px;
+}
+
+.section-content .content-block-equipment dl div:nth-of-type(2n - 1) {
+    background-color: #f3f3f3;
+}
+
+.section-content .content-block-equipment dl div dt {
+    padding: 10px 14px;
+}
+
+.section-content .content-block-equipment dl div dd {
+    padding: 10px 46px;
+}
+
+.section-content .content-block-equipment img {
+    width: 384px;
+    height: 384px;
+    object-fit: cover;
+}

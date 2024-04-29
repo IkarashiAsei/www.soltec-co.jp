@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <!-- コンポーネント化したい（共通） -->
+    <!-- ヘッド -->
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="株式会社ソルテック | 製品案内" />
+        <meta name="keywords" content="株式会社ソルテック | 製品案内" />
+        <title>株式会社ソルテック | 製品案内</title>
+        <link rel="stylesheet" href="./css/reset.css" />
+        <link rel="stylesheet" href="./css/common.css" />
+        <link rel="stylesheet" href="./css/contact_form.css" />
+    </head>
+    <body>
+        <!-- コンポーネント化したい（共通） -->
+        <!-- ヘッダー -->
+        <header>
+            <a href="/"
+                ><img src="./images/soltec_logo.png" alt="soltec_logo"
+            /></a>
+            <nav>
+                <a href="/about">ソルテックの強み</a>
+                <a href="/product">製品案内</a>
+                <a href="/equipment">設備案内</a>
+                <a href="/company_information">企業情報</a>
+                <a href="/news">お知らせ</a>
+                <a href="/contact" class="header-contact">お問い合わせ</a>
+            </nav>
+        </header>
+
+        <main id="contact-form">
+            <!-- コンポーネント化したい（共通） -->
+            <!-- コンテンツトップ -->
+            <div class="content-top contact">
+                <h1>CONTACT<span>お問い合わせ</span></h1>
+            </div>
+            <section class="text-center section-noflex">
+                <p>
+                    （例文）ソルテックは、金属部品における高い技術と確かな生産を生みだし高付加価値で、
+                    <br />
+                    より高度な製品を提供しております。当業界で培った企業グループ、ネットワークをフルに活用し、お客さまのあらゆる問題の解決をサポートします。<br />
+                    どうぞお気軽にご意見、ご質問、ご相談いただけますと幸いです。
+                </p>
+            </section>
+            <section class="section-contact">
+                <a href="tel:0238-28-3333">
+                    <span>電話で問い合わせる</span>
+                    <p><img src="./images/tel.png" alt="tel" />0238-28-3333</p>
+                    <span>営業時間：9:00-18:00</span>
+                </a>
+                <a href="tel:0238-28-1529">
+                    <span>FAXで問い合わせる</span>
+                    <p><img src="./images/fax.png" alt="fax" />0238-28-1529</p>
+                </a>
+            </section>
+
+            <section class="form-erea section-noflex text-center">
+                <div class="page-top-area">
+                    <h3 class="page-heading">フォームで問い合わせる</h3>
+                    <p>
+                        下記フォームに必要事項をご入力の上ご連絡ください。<br />
+                        ※は必須項目です。
+                    </p>
+                </div>
+                <form action="/my-handling-form-page" method="post">
+                    <ul>
+                        <li>
+                            <label for="form-title">タイトル</label>
+                            <input
+                                type="text"
+                                id="form-title"
+                                name="form_title"
+                            />
+                        </li>
+                        <li>
+                            <label for="name">お名前<span>必須</span></label>
+                            <input type="text" id="name" name="user_name" />
+                        </li>
+                        <li>
+                            <label for="company">会社名</label>
+                            <input
+                                type="text"
+                                id="company"
+                                name="company_name"
+                            />
+                        </li>
+                        <li>
+                            <label for="phone">電話番号</label>
+                            <input type="tel" id="phone" name="phone_number" />
+                        </li>
+                        <li>
+                            <label for="email"
+                                >メールアドレス<span>必須</span></label
+                            >
+                            <input type="email" id="email" name="user_email" />
+                        </li>
+                        <li>
+                            <label for="confirm-email"
+                                >メールアドレス確認<span>必須</span></label
+                            >
+                            <input
+                                type="email"
+                                id="confirm-email"
+                                name="confirm_user_email"
+                            />
+                        </li>
+                        <li>
+                            <label for="message">お問い合わせ内容</label>
+                            <textarea
+                                id="message"
+                                name="user_message"
+                            ></textarea>
+                        </li>
+                    </ul>
+
+                    <input
+                        type="checkbox"
+                        id="privacy-policy"
+                        name="privacy_policy_agreement"
+                    />
+                    <label for="privacy-policy"
+                        >プライバシーポリシーに同意する</label
+                    >
+
+                    <input
+                        class="button-blue"
+                        type="submit"
+                        value="確認画面へ進む"
+                    />
+                </form>
+            </section>
+        </main>
+
+        <!-- コンポーネント化したい（共通） -->
+        <!-- フッター -->
+        <footer>
+            <div class="footer-navigation">
+                <img src="./images/soltec_logo.png" alt="soltec_logo" />
+                <nav>
+                    <div>
+                        <a href="/about">ソルテックの強み</a>
+                        <a href="/product">製品案内</a>
+                        <a href="/equipment">設備案内</a>
+                    </div>
+                    <div>
+                        <a href="/company_information">企業情報</a>
+                        <a href="/news">お知らせ</a>
+                        <a href="">採用</a>
+                    </div>
+                </nav>
+            </div>
+            <div class="footer-contact-info">
+                <p>
+                    〒992-1128 山形県米沢市八幡原2-4698-5<br />
+                    TEL：0238-28-3333<br />
+                    FAX：0238-28-1529
+                </p>
+                <a href="/contact" class="header-contact">お問い合わせ</a>
+            </div>
+        </footer>
+    </body>
+</html>

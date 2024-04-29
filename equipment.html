@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <!-- コンポーネント化したい（共通） -->
+    <!-- ヘッド -->
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="株式会社ソルテック | 設備案内" />
+        <meta name="keywords" content="株式会社ソルテック | 設備案内" />
+        <title>株式会社ソルテック | 設備案内</title>
+        <link rel="stylesheet" href="./css/reset.css" />
+        <link rel="stylesheet" href="./css/common.css" />
+        <link rel="stylesheet" href="./css/equipment.css" />
+    </head>
+
+    <body>
+        <!-- コンポーネント化したい（共通） -->
+        <!-- ヘッダー -->
+        <header>
+            <a href="/"
+                ><img src="./images/soltec_logo.png" alt="soltec_logo"
+            /></a>
+            <nav>
+                <a href="/about">ソルテックの強み</a>
+                <a href="/product">製品案内</a>
+                <a href="/equipment">設備案内</a>
+                <a href="/company_information">企業情報</a>
+                <a href="/news">お知らせ</a>
+                <a href="/contact" class="header-contact">お問い合わせ</a>
+            </nav>
+        </header>
+
+        <main>
+            <!-- コンポーネント化したい（共通） -->
+            <!-- コンテンツトップ -->
+            <div class="content-top equipment">
+                <h1>EQUIPMENT<span>設備案内</span></h1>
+            </div>
+
+            <section class="section-side">
+                <h2>
+                    テキストテキスト
+                    <hr />
+                </h2>
+                <div class="section-content">
+                    <h4>
+                        最新設備と独自の職人技術で、かけがえのない価値を。
+                        <!-- <span>
+                            Learning and contribution are value creativity
+                        </span> -->
+                    </h4>
+                    <p>
+                        最新設備と職人の手技が生み出す高精度の技術で高品質な製品を製造します。<br />
+                        また、1個からのご注⽂のお客様にも対応できる豊富な加⼯設備で貴社の加⼯部品調達の不安を解消いたします。
+                    </p>
+                </div>
+            </section>
+
+            <section class="section-side">
+                <div>
+                    <h2>
+                        主要設備一覧
+                        <hr />
+                    </h2>
+                    <ul>
+                        <li><a href="#press-machine">プレス機</a></li>
+                        <li><a href="#work-machines">工作機械</a></li>
+                        <li><a href="#measuring-instrument">測定器</a></li>
+                        <li><a href="#dissolver">溶接機</a></li>
+                        <li><a href="#washing-machine">洗浄機</a></li>
+                    </ul>
+                </div>
+                <div class="section-content">
+                    <div id="press-machine">
+                        <h3>プレス機</h3>
+                        <div class="content-block-equipment">
+                            <dl>
+                                <div>
+                                    <dt>
+                                        機械内自動搬送ライン（200t、4ステージ）
+                                    </dt>
+                                    <dd>1式</dd>
+                                </div>
+                                <div>
+                                    <dt>サーボプレス機（200t）</dt>
+                                    <dd>1式</dd>
+                                </div>
+                                <div>
+                                    <dt>順送プレス機（110t～200t）</dt>
+                                    <dd>3式</dd>
+                                </div>
+                                <div>
+                                    <dt>単発プレス機（45t～200t）</dt>
+                                    <dd>11台</dd>
+                                </div>
+                                <div>
+                                    <dt>プレスブレーキ（55t）</dt>
+                                    <dd>1台</dd>
+                                </div>
+                            </dl>
+                            <img
+                                src="./images/press_machine.jpg"
+                                alt="press_machine"
+                            />
+                        </div>
+                    </div>
+                    <div id="work-machines">
+                        <h3>工作機械</h3>
+                        <div class="content-block-equipment">
+                            <dl>
+                                <div>
+                                    <dt>CADシステム</dt>
+                                    <dd>2台</dd>
+                                </div>
+                                <div>
+                                    <dt>マシニングセンター</dt>
+                                    <dd>2台</dd>
+                                </div>
+                                <div>
+                                    <dt>ワイヤーカット放電加工機</dt>
+                                    <dd>2台</dd>
+                                </div>
+                                <div>
+                                    <dt>平面研削機</dt>
+                                    <dd>1台</dd>
+                                </div>
+                                <div>
+                                    <dt>成型研削盤</dt>
+                                    <dd>1台</dd>
+                                </div>
+                            </dl>
+                            <img
+                                src="./images/work_machines.jpg"
+                                alt="work_machines"
+                            />
+                        </div>
+                    </div>
+                    <div id="measuring-instrument">
+                        <h3>測定器</h3>
+                        <div class="content-block-equipment">
+                            <dl>
+                                <div>
+                                    <dt>三次元測定機</dt>
+                                    <dd>1台</dd>
+                                </div>
+                                <div>
+                                    <dt>測定顕微鏡</dt>
+                                    <dd>1台</dd>
+                                </div>
+                            </dl>
+                            <img
+                                src="./images/measuring_instrument.jpg"
+                                alt="measuring_instrument"
+                            />
+                        </div>
+                    </div>
+                    <div id="dissolver">
+                        <h3>溶接機</h3>
+                        <div class="content-block-equipment">
+                            <dl>
+                                <div>
+                                    <dt>抵抗溶接機</dt>
+                                    <dd>1台</dd>
+                                </div>
+                            </dl>
+                            <img src="./images/dissolver.jpg" alt="dissolver" />
+                        </div>
+                    </div>
+                    <div id="washing-machine">
+                        <h3>洗浄機</h3>
+                        <div class="content-block-equipment">
+                            <dl>
+                                <div>
+                                    <dt>洗浄機（超音派・マイクロバブル）</dt>
+                                    <dd>1台</dd>
+                                </div>
+                            </dl>
+                            <img
+                                src="./images/washing_machine.jpg"
+                                alt="washing_machine"
+                            />
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- コンポーネント化したい（共通） -->
+            <!-- コンタクトセクション -->
+            <section class="section-contact">
+                <a href="tel:0238-28-3333">
+                    <span>電話で問い合わせる</span>
+                    <p><img src="./images/tel.png" alt="tel" />0238-28-3333</p>
+                </a>
+                <a href="/contact">
+                    <span>フォームで問い合わせる</span>
+                    <p>CONTACT</p>
+                </a>
+                <a href="tel:0238-28-1529">
+                    <span>FAXで問い合わせる</span>
+                    <p><img src="./images/fax.png" alt="fax" />0238-28-1529</p>
+                </a>
+            </section>
+        </main>
+
+        <!-- コンポーネント化したい（共通） -->
+        <!-- フッター -->
+        <footer>
+            <div class="footer-navigation">
+                <img src="./images/soltec_logo.png" alt="soltec_logo" />
+                <nav>
+                    <div>
+                        <a href="/about">ソルテックの強み</a>
+                        <a href="/product">製品案内</a>
+                        <a href="/equipment">設備案内</a>
+                    </div>
+                    <div>
+                        <a href="/company_information">企業情報</a>
+                        <a href="/news">お知らせ</a>
+                        <a href="">採用</a>
+                    </div>
+                </nav>
+            </div>
+            <div class="footer-contact-info">
+                <p>
+                    〒992-1128 山形県米沢市八幡原2-4698-5<br />
+                    TEL：0238-28-3333<br />
+                    FAX：0238-28-1529
+                </p>
+                <a href="/contact" class="header-contact">お問い合わせ</a>
+            </div>
+        </footer>
+    </body>
+</html>

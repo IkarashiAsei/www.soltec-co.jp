@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <!-- コンポーネント化したい（共通） -->
+    <!-- ヘッド -->
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="株式会社ソルテック | 製品案内" />
+        <meta name="keywords" content="株式会社ソルテック | 製品案内" />
+        <title>株式会社ソルテック | 製品案内</title>
+        <link rel="stylesheet" href="./css/reset.css" />
+        <link rel="stylesheet" href="./css/common.css" />
+        <link rel="stylesheet" href="./css/news.css" />
+        <link rel="stylesheet" href="./css/news_list.css" />
+    </head>
+    <body>
+        <!-- コンポーネント化したい（共通） -->
+        <!-- ヘッダー -->
+        <header>
+            <a href="/"
+                ><img src="./images/soltec_logo.png" alt="soltec_logo"
+            /></a>
+            <nav>
+                <a href="/about">ソルテックの強み</a>
+                <a href="/product">製品案内</a>
+                <a href="/equipment">設備案内</a>
+                <a href="/company_information">企業情報</a>
+                <a href="/news">お知らせ</a>
+                <a href="/contact" class="header-contact">お問い合わせ</a>
+            </nav>
+        </header>
+
+        <main>
+            <!-- コンポーネント化したい（共通） -->
+            <!-- コンテンツトップ -->
+            <div class="content-top news">
+                <h1>NEWS<span>お知らせ</span></h1>
+            </div>
+
+            <section class="section-news news-list section-noflex">
+                <ul>
+                    <li>
+                        <a href=""
+                            ><span>2024.04.10</span
+                            ><span
+                                >お知らせのテキストが入りますお知らせのテキストが入りますお知らせのテキストが入ります</span
+                            ></a
+                        >
+                    </li>
+                    <li>
+                        <a href=""
+                            ><span>2024.04.10</span
+                            ><span
+                                >お知らせのテキストが入りますお知らせのテキストが入りますお知らせのテキストが入ります</span
+                            ></a
+                        >
+                    </li>
+                    <li>
+                        <a href=""
+                            ><span>2024.04.10</span
+                            ><span
+                                >お知らせのテキストが入りますお知らせのテキストが入りますお知らせのテキストが入ります</span
+                            ></a
+                        >
+                    </li>
+                    <li>
+                        <a href=""
+                            ><span>2024.04.10</span
+                            ><span
+                                >お知らせのテキストが入りますお知らせのテキストが入りますお知らせのテキストが入ります</span
+                            ></a
+                        >
+                    </li>
+                    <li>
+                        <a href=""
+                            ><span>2024.04.10</span
+                            ><span
+                                >お知らせのテキストが入りますお知らせのテキストが入りますお知らせのテキストが入ります</span
+                            ></a
+                        >
+                    </li>
+                    <li>
+                        <a href=""
+                            ><span>2024.04.10</span
+                            ><span
+                                >お知らせのテキストが入りますお知らせのテキストが入りますお知らせのテキストが入ります</span
+                            ></a
+                        >
+                    </li>
+                    <li>
+                        <a href=""
+                            ><span>2024.04.10</span
+                            ><span
+                                >お知らせのテキストが入りますお知らせのテキストが入りますお知らせのテキストが入ります</span
+                            ></a
+                        >
+                    </li>
+                    <li>
+                        <a href=""
+                            ><span>2024.04.10</span
+                            ><span
+                                >お知らせのテキストが入りますお知らせのテキストが入りますお知らせのテキストが入ります</span
+                            ></a
+                        >
+                    </li>
+                </ul>
+
+                <!-- ページネーション
+                <?php the_posts_pagination(
+                    array(
+                        'mid_size'      => 2, // 現在ページの左右に表示するページ番号の数
+                        'prev_next'     => true, // 「前へ」「次へ」のリンクを表示する場合はtrue
+                        'prev_text'     => ('<'), // 「前へ」リンクのテキスト
+                        'next_text'     => ('>'), // 「次へ」リンクのテキスト
+                        'type'          => 'list', // 戻り値の指定 (plain/list)
+                    )
+                ); ?> -->
+            </section>
+
+            <!-- コンポーネント化したい（共通） -->
+            <!-- コンタクトセクション -->
+            <section class="section-contact">
+                <a href="tel:0238-28-3333">
+                    <span>電話で問い合わせる</span>
+                    <p><img src="./images/tel.png" alt="tel" />0238-28-3333</p>
+                </a>
+                <a href="/contact">
+                    <span>フォームで問い合わせる</span>
+                    <p>CONTACT</p>
+                </a>
+                <a href="tel:0238-28-1529">
+                    <span>FAXで問い合わせる</span>
+                    <p><img src="./images/fax.png" alt="fax" />0238-28-1529</p>
+                </a>
+            </section>
+        </main>
+
+        <!-- コンポーネント化したい（共通） -->
+        <!-- フッター -->
+        <footer>
+            <div class="footer-navigation">
+                <img src="./images/soltec_logo.png" alt="soltec_logo" />
+                <nav>
+                    <div>
+                        <a href="/about">ソルテックの強み</a>
+                        <a href="/product">製品案内</a>
+                        <a href="/equipment">設備案内</a>
+                    </div>
+                    <div>
+                        <a href="/company_information">企業情報</a>
+                        <a href="/news">お知らせ</a>
+                        <a href="">採用</a>
+                    </div>
+                </nav>
+            </div>
+            <div class="footer-contact-info">
+                <p>
+                    〒992-1128 山形県米沢市八幡原2-4698-5<br />
+                    TEL：0238-28-3333<br />
+                    FAX：0238-28-1529
+                </p>
+                <a href="/contact" class="header-contact">お問い合わせ</a>
+            </div>
+        </footer>
+    </body>
+</html>

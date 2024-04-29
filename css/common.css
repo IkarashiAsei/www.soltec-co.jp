@@ -1,0 +1,289 @@
+/* 全ページ共通 */
+
+html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+}
+
+body {
+    font-family: "Noto Sans JP", "Hiragino Sans", sans-serif;
+    color: #000000;
+    background-color: #ffffff;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 26px;
+    letter-spacing: 0em;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+@media screen and (max-width: 1024px) {
+    body {
+    }
+}
+
+a.header-contact {
+    padding: 14px 34px;
+    color: #ffffff;
+    background: linear-gradient(320deg, #031950, #0a57a5);
+    width: fit-content;
+}
+
+header {
+    position: sticky;
+    background-color: #ffffff;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+    padding: 16px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header img {
+    width: 60px;
+    height: auto;
+    object-fit: contain;
+}
+
+header nav {
+    gap: 48px;
+    display: flex;
+    align-items: center;
+}
+
+section.section-contact {
+    width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+}
+
+section.section-contact a {
+    width: 33%;
+    background-color: #043a79;
+    color: #ffffff;
+    display: flex;
+    gap: 16px;
+    padding: 40px 0;
+    flex-direction: column;
+    align-items: center;
+}
+
+section.section-contact a span {
+    font: 16px;
+}
+
+section.section-contact a p {
+    font-family: "Heiti SC", "Microsoft YaHei", sans-serif;
+    font-size: 24px;
+    letter-spacing: 0.06em;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+section.section-contact a p img {
+    width: 24px;
+    height: 24px;
+}
+
+footer {
+    margin-top: 154px;
+    background-color: #f3f3f3;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer img {
+    width: 72px;
+    height: auto;
+    object-fit: contain;
+}
+
+footer .footer-navigation {
+    display: flex;
+    align-items: flex-start;
+    gap: 104px;
+}
+
+footer .footer-navigation nav {
+    display: flex;
+    gap: 84px;
+}
+
+footer .footer-navigation nav div {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+footer .footer-contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+}
+
+/* コンテンツページ共通 */
+
+h1 {
+    font-family: "Heiti SC", "Microsoft YaHei", sans-serif;
+    font-size: 48px;
+    letter-spacing: 0.01em;
+    color: #ffffff;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+h1 span {
+    margin-top: 12px;
+    font-size: 14px;
+    font-weight: normal;
+    font-family: "Noto Sans JP", "Hiragino Sans", sans-serif;
+    line-height: 26px;
+    letter-spacing: 0em;
+}
+
+h2 {
+    font-size: 26px;
+    letter-spacing: 0.04em;
+    display: flex;
+    flex-direction: column;
+}
+
+h2 hr {
+    color: #043a79;
+    width: 32px;
+    margin-top: 26px;
+}
+
+section.section-side h2 {
+    align-items: flex-start;
+}
+
+section.section-wrap h2 {
+    align-items: center;
+}
+
+h3 {
+    font-size: 22px;
+    font-weight: normal;
+}
+h3.page-heading {
+    font-weight: 600;
+}
+
+h4 {
+    font-size: 24px;
+    letter-spacing: 0.08em;
+    font-weight: normal;
+    display: flex;
+    flex-direction: column;
+}
+
+h4 span {
+    margin-top: 12px;
+    font-size: 14px;
+    font-family: "Heiti SC", "Microsoft YaHei", sans-serif;
+    letter-spacing: 0.04em;
+}
+
+div.content-top {
+    width: 100%;
+    height: 324px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0 100px;
+}
+
+div.content-top::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+div.content-top.company-information {
+    background-image: url("../images/company_information.jpg");
+}
+
+div.content-top.equipment {
+    background-image: url("../images/equipment.jpg");
+}
+
+div.content-top.product {
+    background-image: url("../images/product.jpg");
+}
+
+div.content-top.news {
+    background-image: url("../images/news.jpg");
+}
+
+div.content-top.contact {
+    background-image: url("../images/contact.jpg");
+}
+
+div.content-top.privacy-policy {
+    background-image: url("../images/privacy_policy.jpg");
+}
+
+section {
+    margin: 120px auto 0 auto;
+    display: flex;
+}
+
+section.section-side {
+    width: 1200px;
+    gap: 40px;
+    justify-content: space-between;
+}
+
+section.section-side .section-content {
+    width: 75%;
+    gap: 32px;
+    display: flex;
+    flex-direction: column;
+}
+
+section.section-wrap {
+    flex-direction: column;
+    align-items: center;
+}
+
+section.section-noflex {
+    display: block;
+}
+
+.page-top-area p {
+    margin: 40px 0px 50px;
+}
+
+.button-blue {
+    padding: 14px 34px;
+    color: #ffffff;
+    background: #043a79;
+    width: fit-content;
+}
+
+.button-border {
+    padding: 14px 34px;
+    border: 1px solid #000000;
+}
+
+.text-center {
+    text-align: center;
+}
