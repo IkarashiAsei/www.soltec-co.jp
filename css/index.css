@@ -1,0 +1,200 @@
+div.fv {
+    width: 100%;
+    height: 88svh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 100px;
+    background-image: url("../images/index.jpg");
+}
+
+div.fv::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+div.fv p.fv-ttl {
+    font-size: 40px;
+    letter-spacing: 0.06em;
+    line-height: 58px;
+    color: #ffffff;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+div.fv p.fv-ttl span {
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0em;
+}
+
+div.fv span.fv-sub-ttl {
+    font-size: 16px;
+    font-family: "Heiti SC", "Microsoft YaHei", sans-serif;
+    letter-spacing: 0.04em;
+    color: #ffffff;
+    z-index: 1;
+}
+
+section.section-index-about-our-advantage {
+    background: linear-gradient(320deg, #031950, #0a57a5);
+    margin: 0;
+    padding: 0 100px;
+    display: flex;
+    flex-direction: column;
+    color: #ffffff;
+}
+
+section.section-index-about-our-advantage div.index-about {
+    margin-top: 168px;
+    display: flex;
+    gap: 206px;
+}
+
+section.section-index-about-our-advantage div.index-our-advantage {
+    margin-top: 168px;
+    margin-bottom: 148px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section.section-index-about-our-advantage p.index-ttl,
+section.section-index-product-equipment p.index-ttl,
+section.section-company-information p.index-ttl,
+section.section-news p.index-ttl {
+    font-size: 48px;
+    font-family: "Heiti SC", "Microsoft YaHei", sans-serif;
+    letter-spacing: 0.01em;
+    line-height: 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+section.section-index-about-our-advantage div.index-our-advantage p.index-ttl {
+    align-items: center;
+}
+
+section.section-index-about-our-advantage p.index-ttl span,
+section.section-index-product-equipment p.index-ttl span,
+section.section-company-information p.index-ttl span,
+section.section-news p.index-ttl span {
+    font-family: "Noto Sans JP", "Hiragino Sans", sans-serif;
+    font-size: 14px;
+    letter-spacing: 0em;
+    line-height: 26px;
+}
+
+section.section-index-about-our-advantage p.index-text {
+    font-size: 18px;
+    line-height: 30px;
+    margin-bottom: 46px;
+}
+
+section.section-index-product-equipment {
+    margin: 154px 0;
+    display: flex;
+    gap: 100px;
+    flex-direction: column;
+    align-items: center;
+    color: #ffffff;
+}
+
+section.section-index-product-equipment div.index-product {
+    padding: 100px 800px 100px 100px;
+    margin-right: 50px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    background-image: url("../images/index_product.png");
+}
+
+section.section-index-product-equipment div.index-equipment {
+    padding: 100px 100px 100px 800px;
+    margin-left: 50px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    background-image: url("../images/index_equipment.png");
+}
+
+section.section-company-information {
+    background: linear-gradient(320deg, #031950, #0a57a5);
+    color: #ffffff;
+    padding: 131px 100px;
+}
+
+section.section-company-information div.section-company-information-contents {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+}
+
+section.section-company-information
+    div.section-company-information-contents
+    div.section-content {
+    gap: 32px;
+    display: flex;
+    flex-direction: column;
+}
+
+section.section-company-information div.section-company-information-img {
+    position: absolute;
+    right: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 70px;
+    margin-top: -38px;
+}
+
+section.section-company-information
+    div.section-company-information-img
+    img.index_company_information_01 {
+    width: 342px;
+    height: 322px;
+    object-fit: cover;
+}
+
+section.section-company-information
+    div.section-company-information-img
+    img.index_company_information_02 {
+    width: 491px;
+    height: 345px;
+    object-fit: cover;
+    margin-right: 108px;
+}
+
+section.section-news {
+    color: #000000;
+    margin-top: 280px;
+    gap: 169px;
+    padding: 0 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+section.section-news div.news-list {
+    width: -webkit-fill-available;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}

@@ -44,7 +44,7 @@ header {
 }
 
 header img {
-    width: 60px;
+    width: 52px;
     height: auto;
     object-fit: contain;
 }
@@ -64,8 +64,8 @@ section.section-contact {
 }
 
 section.section-contact a {
-    width: 33%;
-    background-color: #043a79;
+    width: 33.333%;
+    background: linear-gradient(320deg, #031950, #0a57a5);
     color: #ffffff;
     display: flex;
     gap: 16px;
@@ -272,18 +272,101 @@ section.section-noflex {
     margin: 40px 0px 50px;
 }
 
-.button-blue {
-    padding: 14px 34px;
+button.button-blue {
+    padding: 14px 0;
+    width: 180px;
     color: #ffffff;
-    background: #043a79;
-    width: fit-content;
+    background-color: #043a79;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.button-border {
-    padding: 14px 34px;
+button.button-white {
+    padding: 14px 0;
+    width: 180px;
+    background-color: #ffffff;
+    color: #000000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button.button-border {
+    padding: 14px 0;
+    width: 180px;
     border: 1px solid #000000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button.button-white-border {
+    padding: 14px 0;
+    width: 180px;
+    border: 1px solid #ffffff;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .text-center {
     text-align: center;
+}
+
+ul.image-contents {
+    display: flex;
+    gap: 60px;
+    margin-top: 70px;
+    margin-bottom: 140px;
+}
+
+ul.image-contents li {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 33.333%;
+    gap: 24px;
+}
+
+ul.image-contents li img {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+}
+
+ul.image-contents li div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+ul.image-contents li div p.image-contents-number {
+    font-size: 15px;
+    font-family: "Heiti SC", "Microsoft YaHei", sans-serif;
+    letter-spacing: 0.05em;
+    line-height: 40px;
+}
+
+ul.image-contents li div p.image-contents-number span {
+    font-size: 28px;
+}
+
+ul.image-contents li div p.image-contents-ttl {
+    font-size: 24px;
+    line-height: 38px;
+}
+
+.news-list ul li {
+    padding: 25px 0 25px;
+    border-bottom: 1px solid #dddddd;
+}
+.news-list ul li:first-child {
+    padding-top: 0px;
+}
+.news-list ul li span:first-child {
+    display: inline-block;
+    margin-right: 40px;
 }
