@@ -12,6 +12,14 @@ div.fv {
     background-image: url("../images/index.jpg");
 }
 
+@media screen and (max-width: 1024px) {
+    div.fv {
+        padding: 50px 20px;
+        flex-direction: column-reverse;
+        align-items: stretch;
+    }
+}
+
 div.fv::before {
     content: "";
     position: absolute;
@@ -33,10 +41,25 @@ div.fv p.fv-ttl {
     gap: 15px;
 }
 
+@media screen and (max-width: 1024px) {
+    div.fv p.fv-ttl {
+        font-size: 24px;
+        letter-spacing: 0.05em;
+        line-height: 33px;
+    }
+}
+
 div.fv p.fv-ttl span {
     font-size: 16px;
     line-height: 26px;
     letter-spacing: 0em;
+}
+
+@media screen and (max-width: 1024px) {
+    div.fv p.fv-ttl span {
+        font-size: 12px;
+        line-height: 20px;
+    }
 }
 
 div.fv span.fv-sub-ttl {
@@ -45,6 +68,13 @@ div.fv span.fv-sub-ttl {
     letter-spacing: 0.04em;
     color: #ffffff;
     z-index: 1;
+}
+
+@media screen and (max-width: 1024px) {
+    div.fv span.fv-sub-ttl {
+        font-size: 12px;
+        text-align: right;
+    }
 }
 
 section.section-index-about-our-advantage {
@@ -56,10 +86,29 @@ section.section-index-about-our-advantage {
     color: #ffffff;
 }
 
+@media screen and (max-width: 1024px) {
+    section.section-index-about-our-advantage {
+        padding: 0 20px;
+    }
+}
+
 section.section-index-about-our-advantage div.index-about {
     margin-top: 168px;
     display: flex;
     gap: 206px;
+}
+
+@media screen and (max-width: 1024px) {
+    section.section-index-about-our-advantage div.index-about {
+        flex-direction: column;
+        margin-top: 88px;
+        gap: 28px;
+    }
+    section.section-index-about-our-advantage div.index-about div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 section.section-index-about-our-advantage div.index-our-advantage {
@@ -68,6 +117,12 @@ section.section-index-about-our-advantage div.index-our-advantage {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+@media screen and (max-width: 1024px) {
+    section.section-index-about-our-advantage div.index-our-advantage {
+        margin-top: 98px;
+    }
 }
 
 section.section-index-about-our-advantage p.index-ttl,
@@ -81,6 +136,17 @@ section.section-news p.index-ttl {
     display: flex;
     flex-direction: column;
     gap: 12px;
+}
+
+@media screen and (max-width: 1024px) {
+    section.section-index-about-our-advantage p.index-ttl,
+    section.section-index-product-equipment p.index-ttl,
+    section.section-company-information p.index-ttl,
+    section.section-news p.index-ttl {
+        font-size: 36px;
+        gap: 8px;
+        line-height: 42px;
+    }
 }
 
 section.section-index-about-our-advantage div.index-our-advantage p.index-ttl {
@@ -97,50 +163,101 @@ section.section-news p.index-ttl span {
     line-height: 26px;
 }
 
+@media screen and (max-width: 1024px) {
+    section.section-index-about-our-advantage p.index-ttl span,
+    section.section-index-product-equipment p.index-ttl span,
+    section.section-company-information p.index-ttl span,
+    section.section-news p.index-ttl span {
+        font-size: 12px;
+    }
+}
+
 section.section-index-about-our-advantage p.index-text {
     font-size: 18px;
     line-height: 30px;
     margin-bottom: 46px;
 }
 
+@media screen and (max-width: 1024px) {
+    section.section-index-about-our-advantage p.index-text {
+        width: 100%;
+    }
+}
+
 section.section-index-product-equipment {
-    margin: 154px 0;
+    margin: 154px 0 0 0;
     display: flex;
     gap: 100px;
     flex-direction: column;
-    align-items: center;
+    align-items: stretch;
     color: #ffffff;
 }
 
-section.section-index-product-equipment div.index-product {
-    padding: 100px 800px 100px 100px;
-    margin-right: 50px;
-    background-position: center;
+@media screen and (max-width: 1024px) {
+    section.section-index-product-equipment {
+        margin: 113px 0 0 0;
+        gap: 35px;
+    }
+}
+
+section.section-index-product-equipment div {
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
     flex-direction: column;
     gap: 48px;
+    position: relative;
+}
+
+@media screen and (max-width: 1024px) {
+    section.section-index-product-equipment div {
+        height: 540px;
+        justify-content: center;
+    }
+}
+
+section.section-index-product-equipment div.index-product {
+    padding: 100px 50% 100px 100px;
+    background-position: top right;
+    margin-right: 100px;
     background-image: url("../images/index_product.png");
 }
 
+@media screen and (max-width: 1024px) {
+    section.section-index-product-equipment div.index-product {
+        padding: 0 20px;
+        background-position: center;
+        margin-right: 0;
+    }
+}
+
 section.section-index-product-equipment div.index-equipment {
-    padding: 100px 100px 100px 800px;
-    margin-left: 50px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-    gap: 48px;
+    padding: 100px 100px 100px 50%;
+    background-position: left top;
+    margin-left: 100px;
     background-image: url("../images/index_equipment.png");
+}
+
+@media screen and (max-width: 1024px) {
+    section.section-index-product-equipment div.index-equipment {
+        padding: 0 20px;
+        background-position: center;
+        margin-left: 0;
+    }
 }
 
 section.section-company-information {
     background: linear-gradient(320deg, #031950, #034485);
     color: #ffffff;
     padding: 132px 100px;
-    margin: 100px 0 0 0;
+    margin: 120px 0 0 0;
+}
+
+@media screen and (max-width: 1024px) {
+    section.section-company-information {
+        padding: 95px 20px 420px 20px;
+        margin: 120px 0 0 0;
+    }
 }
 
 section.section-company-information div.section-company-information-contents {
@@ -167,12 +284,30 @@ section.section-company-information div.section-company-information-img {
     margin-top: -38px;
 }
 
+@media screen and (max-width: 1024px) {
+    section.section-company-information div.section-company-information-img {
+        position: absolute;
+        right: 20px;
+        gap: 46px;
+        margin-top: 60px;
+    }
+}
+
 section.section-company-information
     div.section-company-information-img
     img.index_company_information_01 {
     width: 342px;
     height: 322px;
     object-fit: cover;
+}
+
+@media screen and (max-width: 1024px) {
+    section.section-company-information
+        div.section-company-information-img
+        img.index_company_information_01 {
+        width: 205px;
+        height: 191px;
+    }
 }
 
 section.section-company-information
@@ -184,13 +319,30 @@ section.section-company-information
     margin-right: 108px;
 }
 
+@media screen and (max-width: 1024px) {
+    section.section-company-information
+        div.section-company-information-img
+        img.index_company_information_02 {
+        width: 292px;
+        height: 205px;
+        margin-right: 43px;
+    }
+}
+
 section.section-news {
     color: #000000;
     margin-top: 280px;
     gap: 169px;
-    padding: 0 100px;
     display: flex;
     justify-content: space-between;
+}
+
+@media screen and (max-width: 1024px) {
+    section.section-news {
+        flex-direction: column;
+        margin-top: 189px;
+        gap: 48px;
+    }
 }
 
 section.section-news div.news-list {

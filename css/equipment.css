@@ -37,7 +37,9 @@ section.section-side ul li {
 }
 
 .section-content .content-block-equipment img {
-    width: 384px;
-    height: 384px;
+    min-width: 180px;
+    min-height: 180px;
+    max-width: 560px;
+    max-height: 560px;
     object-fit: cover;
 }

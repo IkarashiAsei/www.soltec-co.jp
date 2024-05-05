@@ -21,15 +21,17 @@
         <link rel="stylesheet" href="./css/reset.css" />
         <link rel="stylesheet" href="./css/common.css" />
         <link rel="stylesheet" href="./css/about.css" />
+        <!-- js -->
+        <script src="./js/common.js"></script>
     </head>
 
     <body>
         <!-- コンポーネント化したい（共通） -->
         <!-- ヘッダー -->
         <header>
-            <a href="/"
-                ><img src="./images/soltec_logo.png" alt="soltec_logo"
-            /></a>
+            <a href="/">
+                <img src="./images/soltec_logo.png" alt="soltec_logo" />
+            </a>
             <nav>
                 <a href="/about">ソルテックの強み</a>
                 <a href="/product">製品案内</a>
@@ -38,6 +40,23 @@
                 <a href="/news">お知らせ</a>
                 <a href="/contact" class="header-contact">お問い合わせ</a>
             </nav>
+
+            <button class="menu-icon" id="menu-icon" type="button">
+                <span></span>
+            </button>
+
+            <div class="menu-sp" id="menu-sp">
+                <nav>
+                    <a href="/about">ソルテックの強み</a>
+                    <a href="/product">製品案内</a>
+                    <a href="/equipment">設備案内</a>
+                    <a href="/company_information">企業情報</a>
+                    <a href="/news">お知らせ</a>
+                    <button class="button-white">
+                        <a href="/contact">お問い合わせ</a>
+                    </button>
+                </nav>
+            </div>
         </header>
 
         <main>
@@ -138,9 +157,41 @@
                                 「薄板材バリ無し打ち抜き工法」「金属組子カシメ工法」技術により、品質の安定、工程レス化によるコスト削減、短納期の対応が可能です。<br />
                                 当社では、高い技術力と長年に亘り培ったノウハウを駆使した高度な固有技術により、付加価値比率の高い製造プロセス及び製品をご提供できます。
                             </p>
+                            <a href=""> 薄板材バリ無し打ち抜き工法について </a>
+                            <a href=""> 金属組子接合工法について </a>
                         </div>
                     </li>
                 </ul>
+            </section>
+
+            <section class="section-about-product">
+                <div class="section-about-product-01">
+                    <h2>
+                        製品案内
+                        <hr />
+                    </h2>
+                    <p>
+                        ソルテックは、塑性加工を得意とする会社です。マシンの個性に、職人の経験と技を駆使し造られた素材は、半導体や車両、船舶、医療など幅広い分野で活躍。<br />
+                        お客様が要望されたカタチ、お値段、納期に対し、職人ならではの工夫や発想を持ち、期待値を込めてお応えしています。
+                        持ち、期待値を込めてお応えしています。
+                    </p>
+                    <button class="button-white">
+                        <a href="/product">詳しく見る</a>
+                    </button>
+                </div>
+                <div class="section-about-product-02">
+                    <h2>
+                        製品案内
+                        <hr />
+                    </h2>
+                    <p>
+                        最新設備と職人の手技が生み出す高精度の技術で高品質な製品を製造します。<br />
+                        また、1個からのご注⽂のお客様にも対応できる豊富な加⼯設備で貴社の加⼯部品調達の不安を解消いたします。
+                    </p>
+                    <button class="button-white">
+                        <a href="/equipment">詳しく見る</a>
+                    </button>
+                </div>
             </section>
 
             <!-- コンポーネント化したい（共通） -->
@@ -166,7 +217,7 @@
         <footer>
             <div class="footer-navigation">
                 <img src="./images/soltec_logo.png" alt="soltec_logo" />
-                <nav>
+                <nav class="footer-pc">
                     <div>
                         <a href="/about">ソルテックの強み</a>
                         <a href="/product">製品案内</a>
@@ -187,6 +238,18 @@
                 </p>
                 <a href="/contact" class="header-contact">お問い合わせ</a>
             </div>
+            <nav class="footer-sp">
+                <div>
+                    <a href="/about">ソルテックの強み</a>
+                    <a href="/product">製品案内</a>
+                    <a href="/equipment">設備案内</a>
+                </div>
+                <div>
+                    <a href="/company_information">企業情報</a>
+                    <a href="/news">お知らせ</a>
+                    <a href="">採用</a>
+                </div>
+            </nav>
         </footer>
     </body>
 </html>

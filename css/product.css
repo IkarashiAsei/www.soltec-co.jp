@@ -1,14 +1,15 @@
 section .section-content.section-content-product {
     flex-wrap: wrap;
     flex-direction: row;
+    justify-content: space-between;
 }
 
 section .section-content.section-content-product div {
-    width: 48.2%;
+    width: 47.5%;
 }
 
 section .section-content.section-content-product div.product-block {
-    width: 30.9%;
+    width: 30.1%;
 }
 
 section .section-content.section-content-product div p {

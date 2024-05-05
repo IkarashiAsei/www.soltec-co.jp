@@ -18,16 +18,20 @@ body {
     width: 100%;
 }
 
-@media screen and (max-width: 1024px) {
-    body {
-    }
-}
-
 a.header-contact {
     padding: 14px 34px;
     color: #ffffff;
     background: linear-gradient(320deg, #031950, #034485);
     width: fit-content;
+}
+
+@media screen and (max-width: 1024px) {
+    a.header-contact {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 }
 
 header {
@@ -43,16 +47,165 @@ header {
     align-items: center;
 }
 
+@media screen and (max-width: 1024px) {
+    header {
+        padding: 8px 12px;
+    }
+}
+
 header img {
     width: 52px;
     height: auto;
     object-fit: contain;
 }
 
+@media screen and (max-width: 1024px) {
+    header img {
+        width: 36px;
+    }
+}
+
 header nav {
     gap: 48px;
     display: flex;
     align-items: center;
+}
+
+@media screen and (max-width: 1024px) {
+    header nav {
+        display: none;
+    }
+}
+
+header button {
+    display: none;
+}
+
+@media screen and (max-width: 1024px) {
+    header button {
+        display: block;
+    }
+}
+
+header div.menu-sp {
+    display: none;
+}
+
+header div.menu-sp.active {
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("../images/menu-sp.jpg");
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header div.menu-sp.active nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 4;
+    color: #ffffff;
+    width: 100%;
+    margin: auto 40px;
+    gap: 0;
+}
+
+header div.menu-sp.active nav button.button-white {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 66px;
+}
+
+header div.menu-sp.active nav button.button-white a {
+    padding: 0;
+    text-align: center;
+}
+
+header div.menu-sp.active nav a {
+    width: 100%;
+    font-size: 16px;
+    padding: 20px 0;
+    border-bottom: 1px solid #ffffff;
+}
+
+@media screen and (max-width: 1024px) {
+    header div.menu-sp::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.4);
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    header button.menu-icon {
+        background: none;
+        border: none;
+        overflow: hidden;
+        display: block;
+        position: relative;
+        z-index: 3;
+        width: 28px;
+        height: 28px;
+        cursor: pointer;
+    }
+    header button.menu-icon.menu-icon span,
+    header button.menu-icon.menu-icon::before,
+    header button.menu-icon.menu-icon::after {
+        display: block;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 28px;
+        height: 1px;
+        margin: auto;
+        background: #000000;
+        color: #000000;
+    }
+    header button.menu-icon.menu-icon::before {
+        transform: translate(0, -8px);
+        content: "";
+    }
+    header button.menu-icon.menu-icon::after {
+        transform: translate(0, 8px);
+        content: "";
+    }
+    header button.menu-icon.menu-icon::before,
+    header button.menu-icon.menu-icon::after {
+        transition: transform 200ms;
+    }
+    header button.menu-icon.menu-icon.active span {
+        opacity: 0;
+        transition: opacity 150ms;
+    }
+    header button.menu-icon.menu-icon.active::before {
+        z-index: 3;
+        transform: rotate(45deg);
+        background: #ffffff;
+        color: #ffffff;
+    }
+    header button.menu-icon.menu-icon.active::after {
+        z-index: 3;
+        transform: rotate(-45deg);
+        background: #ffffff;
+        color: #ffffff;
+    }
 }
 
 section.section-contact {
@@ -62,15 +215,30 @@ section.section-contact {
     gap: 8px;
 }
 
+@media screen and (max-width: 1024px) {
+    section.section-contact {
+        flex-direction: column;
+        gap: 12px;
+    }
+}
+
 section.section-contact a {
     width: 33.333%;
-    background: linear-gradient(320deg, #031950, #034485);
+    background: linear-gradient(320deg, #031950, #0a57a5);
     color: #ffffff;
     display: flex;
     gap: 16px;
     padding: 40px 0;
     flex-direction: column;
     align-items: center;
+}
+
+@media screen and (max-width: 1024px) {
+    section.section-contact a {
+        width: 100%;
+        gap: 12px;
+        padding: 22px 0;
+    }
 }
 
 section.section-contact a span {
@@ -99,10 +267,24 @@ footer {
     justify-content: space-between;
 }
 
+@media screen and (max-width: 1024px) {
+    footer {
+        margin-top: 108px;
+        padding: 58px 40px;
+        flex-direction: column;
+    }
+}
+
 footer img {
     width: 72px;
     height: auto;
     object-fit: contain;
+}
+
+@media screen and (max-width: 1024px) {
+    footer img {
+        width: 63px;
+    }
 }
 
 footer .footer-navigation {
@@ -111,9 +293,36 @@ footer .footer-navigation {
     gap: 104px;
 }
 
-footer .footer-navigation nav {
+footer .footer-navigation nav.footer-pc {
     display: flex;
     gap: 84px;
+}
+
+@media screen and (max-width: 1024px) {
+    footer .footer-navigation nav.footer-pc {
+        display: none;
+    }
+}
+
+footer nav.footer-sp {
+    display: none;
+}
+
+@media screen and (max-width: 1024px) {
+    footer nav.footer-sp {
+        display: flex;
+        gap: 16px;
+        align-items: flex-start;
+        margin-top: 41px;
+        width: 100%;
+    }
+    footer nav.footer-sp div {
+        gap: 16px;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
 }
 
 footer .footer-navigation nav div {
@@ -126,6 +335,14 @@ footer .footer-contact-info {
     display: flex;
     flex-direction: column;
     gap: 28px;
+}
+
+@media screen and (max-width: 1024px) {
+    footer .footer-contact-info {
+        font-size: 12px;
+        margin-top: 25px;
+        width: 100%;
+    }
 }
 
 /* コンテンツページ共通 */
@@ -176,7 +393,7 @@ h3 {
     font-weight: normal;
 }
 h3.page-heading {
-    font-weight: 600;
+    font-weight: bold;
 }
 
 h4 {
@@ -205,6 +422,12 @@ div.content-top {
     align-items: center;
     justify-content: flex-start;
     padding: 0 100px;
+}
+
+@media screen and (max-width: 1024px) {
+    div.content-top {
+        padding: 0 20px;
+    }
 }
 
 div.content-top::before {
@@ -246,8 +469,15 @@ div.content-top.about {
 }
 
 section {
-    margin: 100px 100px 0 100px;
+    margin: 120px 100px 0 100px;
     display: flex;
+}
+
+@media screen and (max-width: 1024px) {
+    section {
+        margin: 100px 20px 0 20px;
+        display: block;
+    }
 }
 
 section.section-side {
@@ -268,14 +498,15 @@ section.section-wrap {
 }
 
 section.section-noflex {
-    display: block;
+    flex-direction: column;
+    align-items: center;
 }
 
 .page-top-area p {
     margin: 40px 0px 50px;
 }
 
-button.button-blue {
+.button-blue {
     padding: 14px 0;
     width: 180px;
     color: #ffffff;
@@ -285,9 +516,9 @@ button.button-blue {
     justify-content: center;
 }
 
-button.button-white {
+.button-white {
     padding: 14px 0;
-    width: 180px;
+    width: 220px;
     background-color: #ffffff;
     color: #000000;
     display: flex;
@@ -295,23 +526,47 @@ button.button-white {
     justify-content: center;
 }
 
-button.button-border {
+@media screen and (max-width: 1024px) {
+    .button-white {
+        margin: 0 auto;
+        font-size: 12px;
+        padding: 12px 0;
+    }
+}
+
+.button-border {
     padding: 14px 0;
-    width: 180px;
+    width: 220px;
     border: 1px solid #000000;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-button.button-white-border {
+@media screen and (max-width: 1024px) {
+    .button-border {
+        margin: 0 auto;
+        font-size: 12px;
+        padding: 12px 0;
+    }
+}
+
+.button-white-border {
     padding: 14px 0;
-    width: 180px;
+    width: 220px;
     border: 1px solid #ffffff;
     color: #ffffff;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+@media screen and (max-width: 1024px) {
+    .button-white-border {
+        margin: 0 auto;
+        font-size: 12px;
+        padding: 12px 0;
+    }
 }
 
 .text-center {
@@ -325,6 +580,16 @@ ul.image-contents {
     margin-bottom: 140px;
 }
 
+@media screen and (max-width: 1024px) {
+    ul.image-contents {
+        flex-direction: column;
+        margin-top: 40px;
+        margin-bottom: 50px;
+        gap: 40px;
+        width: 100%;
+    }
+}
+
 ul.image-contents li {
     display: flex;
     flex-direction: column;
@@ -333,10 +598,23 @@ ul.image-contents li {
     gap: 24px;
 }
 
+@media screen and (max-width: 1024px) {
+    ul.image-contents li {
+        width: 100%;
+        gap: 16px;
+    }
+}
+
 ul.image-contents li img {
     width: 100%;
     height: 240px;
     object-fit: cover;
+}
+
+@media screen and (max-width: 1024px) {
+    ul.image-contents li img {
+        height: 223px;
+    }
 }
 
 ul.image-contents li div {
@@ -344,6 +622,12 @@ ul.image-contents li div {
     flex-direction: column;
     align-items: flex-start;
     gap: 16px;
+}
+
+@media screen and (max-width: 1024px) {
+    ul.image-contents li div {
+        gap: 12px;
+    }
 }
 
 .image-contents-number {
@@ -366,10 +650,25 @@ ul.image-contents li div {
     padding: 25px 0 25px;
     border-bottom: 1px solid #dddddd;
 }
+
+@media screen and (max-width: 1024px) {
+    .news-list ul li {
+        padding: 16px 0 16px;
+    }
+}
+
 .news-list ul li:first-child {
     padding-top: 0px;
 }
+
 .news-list ul li span:first-child {
     display: inline-block;
     margin-right: 40px;
+}
+
+@media screen and (max-width: 1024px) {
+    .news-list ul li a {
+        display: flex;
+        flex-direction: column;
+    }
 }

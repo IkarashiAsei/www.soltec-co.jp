@@ -5,7 +5,10 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="description" content="株式会社ソルテック | 個人情報保護方針" />
+        <meta
+            name="description"
+            content="株式会社ソルテック | 個人情報保護方針"
+        />
         <meta
             name="keywords"
             content="株式会社ソルテックは、金型設計から量産まで一貫した加工体制でお客様の要望にお応えいたします。金属加工を通じ、豊かな未来をつくります。"
@@ -18,14 +21,16 @@
         <link rel="stylesheet" href="./css/reset.css" />
         <link rel="stylesheet" href="./css/common.css" />
         <link rel="stylesheet" href="./css/privacy_policy.css" />
+        <!-- js -->
+        <script src="./js/common.js"></script>
     </head>
     <body>
         <!-- コンポーネント化したい（共通） -->
         <!-- ヘッダー -->
         <header>
-            <a href="/"
-                ><img src="./images/soltec_logo.png" alt="soltec_logo"
-            /></a>
+            <a href="/">
+                <img src="./images/soltec_logo.png" alt="soltec_logo" />
+            </a>
             <nav>
                 <a href="/about">ソルテックの強み</a>
                 <a href="/product">製品案内</a>
@@ -34,6 +39,23 @@
                 <a href="/news">お知らせ</a>
                 <a href="/contact" class="header-contact">お問い合わせ</a>
             </nav>
+
+            <button class="menu-icon" id="menu-icon" type="button">
+                <span></span>
+            </button>
+
+            <div class="menu-sp" id="menu-sp">
+                <nav>
+                    <a href="/about">ソルテックの強み</a>
+                    <a href="/product">製品案内</a>
+                    <a href="/equipment">設備案内</a>
+                    <a href="/company_information">企業情報</a>
+                    <a href="/news">お知らせ</a>
+                    <button class="button-white">
+                        <a href="/contact">お問い合わせ</a>
+                    </button>
+                </nav>
+            </div>
         </header>
 
         <main id="privacy-policy">
@@ -110,7 +132,7 @@
         <footer>
             <div class="footer-navigation">
                 <img src="./images/soltec_logo.png" alt="soltec_logo" />
-                <nav>
+                <nav class="footer-pc">
                     <div>
                         <a href="/about">ソルテックの強み</a>
                         <a href="/product">製品案内</a>
@@ -131,6 +153,18 @@
                 </p>
                 <a href="/contact" class="header-contact">お問い合わせ</a>
             </div>
+            <nav class="footer-sp">
+                <div>
+                    <a href="/about">ソルテックの強み</a>
+                    <a href="/product">製品案内</a>
+                    <a href="/equipment">設備案内</a>
+                </div>
+                <div>
+                    <a href="/company_information">企業情報</a>
+                    <a href="/news">お知らせ</a>
+                    <a href="">採用</a>
+                </div>
+            </nav>
         </footer>
     </body>
 </html>
