@@ -26,7 +26,7 @@ body {
 a.header-contact {
     padding: 14px 34px;
     color: #ffffff;
-    background: linear-gradient(320deg, #031950, #0a57a5);
+    background: linear-gradient(320deg, #031950, #034485);
     width: fit-content;
 }
 
@@ -56,7 +56,6 @@ header nav {
 }
 
 section.section-contact {
-    width: 1200px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -65,7 +64,7 @@ section.section-contact {
 
 section.section-contact a {
     width: 33.333%;
-    background: linear-gradient(320deg, #031950, #0a57a5);
+    background: linear-gradient(320deg, #031950, #034485);
     color: #ffffff;
     display: flex;
     gap: 16px;
@@ -165,6 +164,7 @@ h2 hr {
 
 section.section-side h2 {
     align-items: flex-start;
+    white-space: nowrap;
 }
 
 section.section-wrap h2 {
@@ -241,13 +241,16 @@ div.content-top.privacy-policy {
     background-image: url("../images/privacy_policy.jpg");
 }
 
+div.content-top.about {
+    background-image: url("../images/about.jpg");
+}
+
 section {
-    margin: 120px auto 0 auto;
+    margin: 100px 100px 0 100px;
     display: flex;
 }
 
 section.section-side {
-    width: 1200px;
     gap: 40px;
     justify-content: space-between;
 }
@@ -343,18 +346,18 @@ ul.image-contents li div {
     gap: 16px;
 }
 
-ul.image-contents li div p.image-contents-number {
+.image-contents-number {
     font-size: 15px;
     font-family: "Heiti SC", "Microsoft YaHei", sans-serif;
     letter-spacing: 0.05em;
     line-height: 40px;
 }
 
-ul.image-contents li div p.image-contents-number span {
+.image-contents-number span {
     font-size: 28px;
 }
 
-ul.image-contents li div p.image-contents-ttl {
+.image-contents-ttl {
     font-size: 24px;
     line-height: 38px;
 }

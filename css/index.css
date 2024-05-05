@@ -48,7 +48,7 @@ div.fv span.fv-sub-ttl {
 }
 
 section.section-index-about-our-advantage {
-    background: linear-gradient(320deg, #031950, #0a57a5);
+    background: linear-gradient(320deg, #031950, #034485);
     margin: 0;
     padding: 0 100px;
     display: flex;
@@ -137,9 +137,10 @@ section.section-index-product-equipment div.index-equipment {
 }
 
 section.section-company-information {
-    background: linear-gradient(320deg, #031950, #0a57a5);
+    background: linear-gradient(320deg, #031950, #034485);
     color: #ffffff;
-    padding: 131px 100px;
+    padding: 132px 100px;
+    margin: 100px 0 0 0;
 }
 
 section.section-company-information div.section-company-information-contents {

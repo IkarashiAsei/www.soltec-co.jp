@@ -1,0 +1,71 @@
+section.section-side .section-content.section-business {
+    display: flex;
+    flex-direction: row;
+    gap: 48px;
+}
+
+section.section-side
+    .section-content.section-business
+    div.section-business-block {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+section.section-side
+    .section-content.section-business
+    div.section-business-block
+    div {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+section.section-side .section-content.section-business img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+section.section-side.section-about {
+    color: #ffffff;
+    background: linear-gradient(320deg, #031950, #034485);
+    margin: 100px 0 0 0;
+    padding: 148px 100px 132px 100px;
+    width: 100%;
+}
+
+ul.image-contents.section-about-contents {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    margin: 0;
+}
+
+ul.image-contents.section-about-contents li {
+    display: flex;
+    gap: 48px;
+    flex-direction: row;
+    width: 100%;
+    justify-content: flex-end;
+}
+
+ul.image-contents.section-about-contents li img {
+    width: 360px;
+    height: 240px;
+}
+
+ul.image-contents.section-about-contents li div {
+    width: 50%;
+}
+
+ul.image-contents.section-about-contents li div p.image-contents-ttl {
+    display: flex;
+    align-items: stretch;
+    gap: 24px;
+}
+
+ul.image-contents.section-about-contents li div .image-contents-number {
+    font-size: 30px;
+}

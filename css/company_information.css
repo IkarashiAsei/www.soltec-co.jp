@@ -1,7 +1,7 @@
 img.company-information-img {
-    max-width: 1200px;
+    width: -webkit-fill-available;
     height: 256px;
-    margin: 54px auto 0 auto;
+    margin: 54px 100px 0 100px;
     object-fit: cover;
 }
 
@@ -30,8 +30,9 @@ section.section-wrap.section-wrap-about h2 hr {
 
 section.section-wrap.section-wrap-about {
     padding: 120px 0;
-    background: linear-gradient(320deg, #031950, #0a57a5);
+    background: linear-gradient(320deg, #031950, #034485);
     color: #ffffff;
+    margin: 100px 0 0 0;
 }
 
 section.section-wrap.section-wrap-about table {
