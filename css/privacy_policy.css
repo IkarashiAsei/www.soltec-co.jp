@@ -7,10 +7,24 @@
     margin: 120px auto 0px;
 }
 
+@media screen and (max-width: 1024px) {
+    #privacy-policy section {
+        width: 100%;
+        margin: 90px auto 0px;
+        padding: 0 20px;
+    }
+}
+
 #privacy-policy .privacy-text p {
     font-size: 16px;
     margin-bottom: 20px;
     line-height: 28px;
+}
+
+@media screen and (max-width: 1024px) {
+    #privacy-policy .privacy-text p {
+        font-size: 14px;
+    }
 }
 
 #privacy-policy .privacy-text span {
@@ -19,4 +33,10 @@
 
 #privacy-policy section .text-center {
     margin-top: 110px;
+}
+
+@media screen and (max-width: 1024px) {
+    #privacy-policy section .text-center {
+        margin-top: 48px;
+    }
 }

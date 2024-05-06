@@ -2,7 +2,19 @@
     width: 50%;
     padding: 40px 0;
     height: 180px;
+    display: flex;
     justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+
+@media screen and (max-width: 1024px) {
+    #contact-form section.section-contact a {
+        width: 100%;
+        gap: 6px;
+        padding: 22px 0;
+        height: 122px;
+    }
 }
 
 section.form-erea ul {
@@ -10,11 +22,24 @@ section.form-erea ul {
     margin: 0 auto 50px;
 }
 
+@media screen and (max-width: 1024px) {
+    section.form-erea ul {
+        width: 100%;
+    }
+}
+
 section.form-erea ul li {
     display: flex;
     margin-top: 20px;
     justify-content: space-between;
     flex-wrap: wrap;
+}
+
+@media screen and (max-width: 1024px) {
+    section.form-erea ul li {
+        flex-direction: column;
+        gap: 8px;
+    }
 }
 
 section.form-erea label {
@@ -33,6 +58,15 @@ section.form-erea ul li input,
 section.form-erea ul li textarea {
     width: 500px;
     border: solid 1px #dddddd;
+    padding: 8px;
+}
+
+@media screen and (max-width: 1024px) {
+    section.form-erea ul li input,
+    section.form-erea ul li textarea {
+        width: 100%;
+        padding: 4px;
+    }
 }
 
 section.form-erea ul li textarea {
@@ -46,9 +80,21 @@ section.form-erea .button-blue {
     cursor: pointer;
 }
 
+@media screen and (max-width: 1024px) {
+    section.form-erea .button-blue {
+        margin: 48px auto;
+    }
+}
+
 #confirm-page section ul {
     width: 723px;
     margin: 0 auto 50px;
+}
+
+@media screen and (max-width: 1024px) {
+    #confirm-page section ul {
+        width: 100%;
+    }
 }
 
 #confirm-page section ul li {
@@ -60,11 +106,26 @@ section.form-erea .button-blue {
     font-size: 16px;
 }
 
+@media screen and (max-width: 1024px) {
+    #confirm-page section ul li {
+        flex-direction: column;
+        gap: 8px;
+        padding: 16px 0 16px;
+    }
+}
+
 #confirm-page section ul li span {
     display: block;
 }
+
 #confirm-page section ul li span:nth-child(2) {
     width: 500px;
+}
+
+@media screen and (max-width: 1024px) {
+    #confirm-page section ul li span:nth-child(2) {
+        width: 100%;
+    }
 }
 
 #confirm-page .button-blue {

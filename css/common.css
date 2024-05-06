@@ -351,19 +351,35 @@ h1 {
     font-family: "Heiti SC", "Microsoft YaHei", sans-serif;
     font-size: 48px;
     letter-spacing: 0.01em;
+    line-height: 60px;
     color: #ffffff;
     z-index: 1;
     display: flex;
     flex-direction: column;
+    gap: 12px;
+}
+
+@media screen and (max-width: 1024px) {
+    h1 {
+        font-size: 36px;
+        letter-spacing: 0.01em;
+        line-height: 46px;
+        gap: 0;
+    }
 }
 
 h1 span {
-    margin-top: 12px;
     font-size: 14px;
     font-weight: normal;
     font-family: "Noto Sans JP", "Hiragino Sans", sans-serif;
     line-height: 26px;
     letter-spacing: 0em;
+}
+
+@media screen and (max-width: 1024px) {
+    h1 span {
+        font-size: 12px;
+    }
 }
 
 h2 {
@@ -373,10 +389,23 @@ h2 {
     flex-direction: column;
 }
 
+@media screen and (max-width: 1024px) {
+    h2 {
+        font-size: 24px;
+    }
+}
+
 h2 hr {
     color: #043a79;
     width: 32px;
     margin-top: 26px;
+}
+
+@media screen and (max-width: 1024px) {
+    h2 hr {
+        width: 28px;
+        margin-top: 12px;
+    }
 }
 
 section.section-side h2 {
@@ -404,11 +433,24 @@ h4 {
     flex-direction: column;
 }
 
+@media screen and (max-width: 1024px) {
+    h4 {
+        font-size: 18px;
+    }
+}
+
 h4 span {
     margin-top: 12px;
     font-size: 14px;
     font-family: "Heiti SC", "Microsoft YaHei", sans-serif;
     letter-spacing: 0.04em;
+}
+
+@media screen and (max-width: 1024px) {
+    h4 span {
+        margin-top: 8px;
+        font-size: 12px;
+    }
 }
 
 div.content-top {
@@ -427,6 +469,7 @@ div.content-top {
 @media screen and (max-width: 1024px) {
     div.content-top {
         padding: 0 20px;
+        height: 240px;
     }
 }
 
@@ -475,7 +518,7 @@ section {
 
 @media screen and (max-width: 1024px) {
     section {
-        margin: 100px 20px 0 20px;
+        margin: 90px 20px 0 20px;
         display: block;
     }
 }
@@ -492,6 +535,14 @@ section.section-side .section-content {
     flex-direction: column;
 }
 
+@media screen and (max-width: 1024px) {
+    section.section-side .section-content {
+        width: 100%;
+        margin-top: 40px;
+        gap: 24px;
+    }
+}
+
 section.section-wrap {
     flex-direction: column;
     align-items: center;
@@ -504,6 +555,12 @@ section.section-noflex {
 
 .page-top-area p {
     margin: 40px 0px 50px;
+}
+
+@media screen and (max-width: 1024px) {
+    .page-top-area p {
+        margin: 20px 0px 36px;
+    }
 }
 
 .button-blue {
@@ -667,8 +724,15 @@ ul.image-contents li div {
 }
 
 @media screen and (max-width: 1024px) {
+    .news-list ul li span:first-child {
+        margin-right: 0;
+    }
+}
+
+@media screen and (max-width: 1024px) {
     .news-list ul li a {
         display: flex;
         flex-direction: column;
+        gap: 8px;
     }
 }

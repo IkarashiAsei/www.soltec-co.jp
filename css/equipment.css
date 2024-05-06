@@ -5,10 +5,23 @@ section.section-side ul {
     gap: 20px;
 }
 
+@media screen and (max-width: 1024px) {
+    section.section-side ul {
+        margin-top: 40px;
+        gap: 8px;
+    }
+}
+
 section.section-side ul li {
     list-style: inside;
     font-size: 18px;
     color: #043a79;
+}
+
+@media screen and (max-width: 1024px) {
+    section.section-side ul li {
+        font-size: 16px;
+    }
 }
 
 .section-content .content-block-equipment {
@@ -18,10 +31,24 @@ section.section-side ul li {
     margin-top: 36px;
 }
 
+@media screen and (max-width: 1024px) {
+    .section-content .content-block-equipment {
+        flex-direction: column-reverse;
+        gap: 16px;
+        margin-top: 26px;
+    }
+}
+
 .section-content .content-block-equipment dl div {
     display: flex;
     justify-content: space-between;
     width: 432px;
+}
+
+@media screen and (max-width: 1024px) {
+    .section-content .content-block-equipment dl div {
+        width: 100%;
+    }
 }
 
 .section-content .content-block-equipment dl div:nth-of-type(2n - 1) {
@@ -32,8 +59,20 @@ section.section-side ul li {
     padding: 10px 14px;
 }
 
+@media screen and (max-width: 1024px) {
+    .section-content .content-block-equipment dl div dt {
+        width: 70%;
+    }
+}
+
 .section-content .content-block-equipment dl div dd {
     padding: 10px 46px;
+}
+
+@media screen and (max-width: 1024px) {
+    .section-content .content-block-equipment dl div dd {
+        padding: 10px 26px;
+    }
 }
 
 .section-content .content-block-equipment img {
@@ -42,4 +81,12 @@ section.section-side ul li {
     max-width: 560px;
     max-height: 560px;
     object-fit: cover;
+}
+
+@media screen and (max-width: 1024px) {
+    .section-content .content-block-equipment img {
+        min-width: 100%;
+        max-width: 100%;
+        height: 180px;
+    }
 }

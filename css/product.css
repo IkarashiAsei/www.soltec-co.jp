@@ -8,8 +8,20 @@ section .section-content.section-content-product div {
     width: 47.5%;
 }
 
+@media screen and (max-width: 1024px) {
+    section .section-content.section-content-product div {
+        width: 100%;
+    }
+}
+
 section .section-content.section-content-product div.product-block {
     width: 30.1%;
+}
+
+@media screen and (max-width: 1024px) {
+    section .section-content.section-content-product div.product-block {
+        width: 100%;
+    }
 }
 
 section .section-content.section-content-product div p {
@@ -24,9 +36,22 @@ section .section-content.section-content-product div img {
     object-fit: cover;
 }
 
+@media screen and (max-width: 1024px) {
+    section .section-content.section-content-product div img {
+        height: 180px;
+        margin-top: 18px;
+    }
+}
+
 section .section-content.section-content-product div.product-block img {
     height: 196px;
     object-fit: cover;
+}
+
+@media screen and (max-width: 1024px) {
+    section .section-content.section-content-product div.product-block img {
+        height: 180px;
+    }
 }
 
 section .section-content.section-content-product ul {
@@ -55,5 +80,5 @@ section .section-content dl div dt {
 }
 
 section .section-content dl div dd {
-    width: 80%;
+    width: 75%;
 }

@@ -5,6 +5,14 @@ img.company-information-img {
     object-fit: cover;
 }
 
+@media screen and (max-width: 1024px) {
+    img.company-information-img {
+        width: 100%;
+        height: 160px;
+        margin: 24px 0 0 0;
+    }
+}
+
 section.section-side .section-content ul {
     display: flex;
     gap: 32px;
@@ -18,10 +26,23 @@ section.section-side .section-content ul li {
     gap: 36px;
 }
 
+@media screen and (max-width: 1024px) {
+    section.section-side .section-content ul li {
+        font-size: 16px;
+        gap: 22px;
+    }
+}
+
 section.section-side .section-content ul li span {
     font-size: 22px;
     font-family: "Heiti SC", "Microsoft YaHei", sans-serif;
     color: #043a79;
+}
+
+@media screen and (max-width: 1024px) {
+    section.section-side .section-content ul li span {
+        font-size: 20px;
+    }
 }
 
 section.section-wrap.section-wrap-about h2 hr {
@@ -35,9 +56,23 @@ section.section-wrap.section-wrap-about {
     margin: 120px 0 0 0;
 }
 
+@media screen and (max-width: 1024px) {
+    section.section-wrap.section-wrap-about {
+        padding: 90px 20px;
+        margin: 90px 0 0 0;
+    }
+}
+
 section.section-wrap.section-wrap-about table {
     margin: 80px auto;
     width: 686px;
+}
+
+@media screen and (max-width: 1024px) {
+    section.section-wrap.section-wrap-about table {
+        margin: 40px auto;
+        width: 100%;
+    }
 }
 
 section.section-wrap.section-wrap-about table,
@@ -58,9 +93,22 @@ section.section-wrap.section-wrap-about th {
     border-right: 1px solid #848484;
 }
 
+@media screen and (max-width: 1024px) {
+    section.section-wrap.section-wrap-about th {
+        width: 30%;
+    }
+}
+
 section.section-wrap.section-wrap-about td {
     display: flex;
     gap: 32px;
+}
+
+@media screen and (max-width: 1024px) {
+    section.section-wrap.section-wrap-about td {
+        flex-direction: column;
+        gap: 0;
+    }
 }
 
 section.section-wrap.section-wrap-about iframe {
@@ -68,17 +116,38 @@ section.section-wrap.section-wrap-about iframe {
     height: 220px;
 }
 
+@media screen and (max-width: 1024px) {
+    section.section-wrap.section-wrap-about iframe {
+        width: 100%;
+        height: 220px;
+    }
+}
+
 section.section-wrap ul.section-content-history {
-    margin: 80px auto;
+    margin: 80px auto 0 auto;
     width: 686px;
     gap: 32px;
     display: flex;
     flex-direction: column;
 }
 
+@media screen and (max-width: 1024px) {
+    section.section-wrap ul.section-content-history {
+        margin: 40px auto 0 auto;
+        width: 100%;
+        gap: 22px;
+    }
+}
+
 section.section-wrap ul.section-content-history li {
     display: flex;
     align-items: flex-start;
+}
+
+@media screen and (max-width: 1024px) {
+    section.section-wrap ul.section-content-history li {
+        flex-direction: column;
+    }
 }
 
 section.section-wrap ul.section-content-history li div {
@@ -87,6 +156,12 @@ section.section-wrap ul.section-content-history li div {
     color: #043a79;
     display: flex;
     align-items: center;
+}
+
+@media screen and (max-width: 1024px) {
+    section.section-wrap ul.section-content-history li div {
+        width: 100%;
+    }
 }
 
 section.section-wrap ul.section-content-history li div span {
@@ -98,6 +173,12 @@ section.section-wrap ul.section-content-history li div span {
     position: relative;
 }
 
+@media screen and (max-width: 1024px) {
+    section.section-wrap ul.section-content-history li div span {
+        margin-right: 12px;
+    }
+}
+
 section.section-wrap ul.section-content-history li div span::after {
     position: absolute;
     content: "";
@@ -106,4 +187,16 @@ section.section-wrap ul.section-content-history li div span::after {
     top: 0;
     left: 5px;
     background-color: #043a79;
+}
+
+@media screen and (max-width: 1024px) {
+    section.section-wrap ul.section-content-history li div span::after {
+        height: 128px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    section.section-wrap ul.section-content-history li p {
+        margin-left: 22px;
+    }
 }
