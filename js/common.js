@@ -10,4 +10,22 @@ document.addEventListener("DOMContentLoaded", function () {
         // menu-spの表示状態を切り替える
         menuSp.classList.toggle("active")
     })
+
+    const boxes = document.querySelectorAll(".anime")
+    const boxOptions = {
+        root: null,
+        threshold: 0.25,
+        rootMargin: "0px 0px -50px 0px",
+    }
+    const boxObserver = new IntersectionObserver(function (entries, observer) {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("anime-show")
+                observer.unobserve(entry.target)
+            }
+        })
+    }, boxOptions)
+    boxes.forEach((box) => {
+        boxObserver.observe(box)
+    })
 })

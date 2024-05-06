@@ -16,6 +16,12 @@ section.section-side ul li {
     list-style: inside;
     font-size: 18px;
     color: #043a79;
+    transition: all 0.4s ease;
+}
+
+section.section-side ul li:hover {
+    color: #368de5;
+    transition: all 0.4s ease;
 }
 
 @media screen and (max-width: 1024px) {

@@ -78,6 +78,15 @@ section.form-erea .button-blue {
     margin: 70px auto;
     border: none;
     cursor: pointer;
+    border: 1px solid transparent;
+    transition: all 0.4s ease;
+}
+
+section.form-erea .button-blue:hover {
+    background-color: transparent;
+    border: 1px solid #043a79;
+    color: #043a79;
+    transition: all 0.4s ease;
 }
 
 @media screen and (max-width: 1024px) {
@@ -133,4 +142,13 @@ section.form-erea .button-blue {
     margin: 70px auto;
     border: none;
     cursor: pointer;
+    border: 1px solid transparent;
+    transition: all 0.4s ease;
+}
+
+#confirm-page .button-blue:hover {
+    background-color: transparent;
+    border: 1px solid #043a79;
+    color: #043a79;
+    transition: all 0.4s ease;
 }
